@@ -1,0 +1,16 @@
+title: manostsalikis like
+description: hi like on manostsalikis
+template:
+  repo: manostsalikis-like-template
+  name: manostsalikis-like
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
